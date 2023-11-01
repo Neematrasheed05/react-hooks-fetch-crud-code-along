@@ -11,6 +11,7 @@ function ItemForm({onAddItem}) {
       category: category,
       isInCart: false,
     };
+    console.log(itemData);
     fetch("http://localhost:4000/items", {
     method: "POST",
     headers: {

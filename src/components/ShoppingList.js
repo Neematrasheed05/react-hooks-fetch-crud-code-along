@@ -16,9 +16,7 @@ function ShoppingList() {
   function handleCategoryChange(category) {
     setSelectedCategory(category);
   }
-  function handleAddItem(newItem){
-    console.log("In shopping list:", newItem)
-  }
+  
 
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") return true;
@@ -27,8 +25,26 @@ function ShoppingList() {
     
   });
  
+  function handleAddItem(newItem){
+    setItems([...items, newItem])
+  }
 
-
+  function handleUpdateItem (updatedItem){
+    const updatedItems = items.map((item) => {
+      if(item.id === updatedItem.id){
+        return updatedItem
+      }else{
+        return item
+      }
+    })
+    setItems(updatedItems)
+    console.log("is in cart", )
+  }
+   function handleDeleteItem(deletedItem) {
+    const updatedItems = items.filter((item) => item.id !== deletedItem.id);
+  setItems(updatedItems);
+    //console.log("In ShoppingCart:", deletedItem);
+  }
   return (
     <div className="ShoppingList">
       <ItemForm onAddItem ={handleAddItem}/>
@@ -38,7 +54,7 @@ function ShoppingList() {
       />
       <ul className="Items">
         {itemsToDisplay.map((item) => (
-          <Item key={item.id} item={item} />
+          <Item key={item.id} item={item} onUpdateItem = {handleUpdateItem} onDeleteItem = {handleDeleteItem}/>
         ))}
       </ul>
     </div>

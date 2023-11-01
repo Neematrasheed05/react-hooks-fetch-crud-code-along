@@ -1,76 +1,16 @@
 {
   "items": [
     {
-      "id": 1,
-      "name": "Yogurt",
-      "category": "Dairy",
-      "isInCart": false
-    },
-    {
-      "id": 2,
-      "name": "Pomegranate",
+      "name": "m",
       "category": "Produce",
-      "isInCart": false
+      "isInCart": true,
+      "id": 1
     },
     {
-      "id": 3,
-      "name": "Lettuce",
-      "category": "Produce",
-      "isInCart": false
-    },
-    {
-      "id": 4,
-      "name": "String Cheese",
-      "category": "Dairy",
-      "isInCart": false
-    },
-    {
-      "id": 5,
-      "name": "Swiss Cheese",
-      "category": "Dairy",
-      "isInCart": false
-    },
-    {
-      "id": 6,
-      "name": "Cookies",
+      "name": "mango",
       "category": "Dessert",
-      "isInCart": false
-    },
-    {
-      "name": "fish",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 7
-    },
-    {
-      "name": "fish",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 8
-    },
-    {
-      "name": "milk",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 9
-    },
-    {
-      "name": "",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 10
-    },
-    {
-      "name": "milk",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 11
-    },
-    {
-      "name": "rie",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 12
+      "isInCart": true,
+      "id": 2
     }
   ]
 }
